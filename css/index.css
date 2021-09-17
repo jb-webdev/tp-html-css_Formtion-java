@@ -67,9 +67,9 @@
     margin-top: 2em;  
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 2em;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 2em;
     border-bottom: 1px solid var(--borderSecondary);
 }
 .about_article{
@@ -98,6 +98,7 @@
     padding-bottom: auto;
     text-align: justify;
     
+
 }
 /* button article */
 .about_wrapper_button{
@@ -143,6 +144,8 @@ margin-bottom: 1em;
     flex-direction: column;
     justify-content: center;
     height: 400px;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--borderSecondary);
   }
   .histoire_title{
       color: var(--white);
@@ -164,10 +167,87 @@ margin-bottom: 1em;
       margin-left: auto;
       margin-right: auto;
   }
+   /* =================== SECTION SERVICE ====================== */
+  /* Section Membre */
+
+#services {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2em;
+    padding-top: 1.5em;
+    text-align: center;
+    border-top: 1px solid var(--borderSecondary);
+    border-bottom: 1px solid var(--borderSecondary);
+    
+ }
+ .services__wrapper{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 1rem;
+ }
+ .services__figure-img{
+     margin: 0;
+     padding: 1em;
+ }
+ .services__img {
+     width: 100%;
+ }
+
+ .services_title {
+     margin-bottom: 1em;
+     font-size: 3em;
+     color: var(--black);
+ }
+ 
+ .services__title-h3 {
+     font-size: clamp(0.8em, 1.5em, 2em);
+ }
+ 
+ /* SECTION EXPERIENCE */
+ #section_experience{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2em;
+    padding-top: 1.5em;
+    text-align: center;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--borderSecondary);
+ }
+ .experience_title{
+    margin-bottom: 1em;
+    font-size: 3em;
+    color: var(--black);
+ }
+ .experience_span-title{
+     color: var(--secondary);
+ }
+ .experience_wrapper{
+     display: flex;
+     flex-direction: row; 
+ }
+
+ .experience_wrapper-item {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+ .experience_item {
+      width: 100%;
+      margin-right: 3em;
+      text-align: justify;
+ }
+ .experience_video{
+     margin-left: 3em;
+ }
+ 
 
   /* RESPONSIVE */
 
   @media screen and (max-width: 1100px){
+    #about{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .histoire_title{
         font-size: 1.5em;
     }
@@ -175,6 +255,35 @@ margin-bottom: 1em;
         font-size: 1em;
         margin-left: 1em;
         margin-right: 1em;
+    }
+    .about_description{
+        padding-right: 10px;
+        overflow-y: scroll;
+        scrollbar-color: var(--primary) var(--secondary);
+        scrollbar-width: thin;
+    }
+  }
+  @media screen and (max-width: 1050px){
+    .experience_wrapper{
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+    .experience_video{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-left: 0;
+        padding-right: auto;
+        padding-left: auto;
+        
+    }
+    .experience_video iframe{
+        max-width: 80%;
+        height: auto;
+        margin-left: 0;
+        
+        
     }
   }
   @media screen and (max-width: 890px){
@@ -187,54 +296,6 @@ margin-bottom: 1em;
         margin-right: 0;
     }
   }
-  /* =================== SECTION SERVICE ====================== */
-  /* Section Membre */
-
-#services {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 2em;
-    padding-top: 1.5em;
-    text-align: center;
-    
- }
- .services__wrapper{
-     display: flex;
-     justify-content: space-evenly;
-     padding: 1rem;
- }
-
- .services_title {
-     margin-bottom: 1em;
-     font-size: 3em;
-     color: var(--black);
- }
- .services__img img{
-     margin-bottom: 1em;
-     max-width: 200px;
- }
- .services__card h3 {
-     font-size: clamp(2em, 1vw, 2em);
-     margin-bottom: 2em;
-     color: var(--black);
-
- }
  
- @media screen and (max-width: 1430px) {
-    .services__img img {
-        max-width: 180px;
-    }
- }
- @media screen and (max-width: 11250px) {
-    .services__wrapper{
-        flex-wrap: wrap;
-        /* align-items: center; */
-    }
-    .services__img img {
-        max-width: 200px;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
- }
 
  
