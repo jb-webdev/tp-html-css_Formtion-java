@@ -1,3 +1,3 @@
 ## TP HTML - CSS Formation Java
 
-![What is this](ScreenProjet.png)
+![Photo de la page d'acceuil du TP](ScreenProjet.png){:height ="200px" width="auto"}.
