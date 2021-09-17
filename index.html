@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTMl - CSS</title>
+
+    <!-- ========== Style CSS ==========-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- ========== Style FONTS ==========-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Parisienne&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Parisienne&display=swap');
+    </style>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
+
+    <title>royal hotel</title>
 </head>
 <body>
-    
+    <header id="header">
+        <figure class="header_logo-box">
+            <img src="./img/logo.svg" alt="logo de l'hotel Le Royal Hotel situé au 102 avenue de castelane 13008 Marseille" class="header_logo">
+        </figure>
+        <h1 class="header_title"> Le Royal </br> Hotel</h1>
+    </header>
+    <nav id="navbar">
+        <ul id="navbar_box-links">
+            <li class="navbar_links navbar_links-active"><a href="#main">accueil</a></li>
+            <li class="navbar_links"><a href="#about">hôtel</a></li>
+            <li class="navbar_links"><a href="#">restaurant</a></li>
+            <li class="navbar_links"><a href="#">événements</a></li>
+            <li class="navbar_links"><a href="./pages/activites.html">activités</a></li>
+            <li class="navbar_links"><a href="#section_histoire">histoire</a></li>
+            <li class="navbar_links"><a href="#section_contact">contact</a></li>
+            <li class="navbar_links links-reservation"><a href="#section_reservation">réserver</a> </li>
+        </ul>
+    </nav>
+    <main id="main">
+        <!-- Section SLIDER -->
+        <section class="slider">
+            <div class="slider-items">
+                <div class="item active">
+                    <img src="./img/slide1.jpg" alt="photo de notre suite royal">
+                </div>
+                <div class="item">
+                    <img src="./img/slide2.jpg" alt="Photo du jardin de la suite royal">
+                </div>
+                <div class="item">
+                    <img src="./img/slide3.jpg" alt="Photo de la psicine de l'hotel royal">
+                </div>
+            </div>
+            <div class="slide-left"><</div>
+            <div class="slide-right">></span></div>
+            
+        </section>
+        <!-- Section About -->
+        <section id="about">
+            <article class="about_article">
+                <h2 class="about_title">Bienvenue au Le Royal</h2>
+                <figure class="about_figure">
+                   <img class="about_img" src="./img/welcome.jpg" alt="photo du hall de l'hotel le royal de marseille">
+                </figure>
+                <div class="about_text-wrapper">
+                    <p class="about_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequuntur consectetur saepe sint
+                    ad, error quis ipsum officia pariatur minima aut sit debitis itaque perspiciatis! Autem possimus non
+                    voluptate ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores exercitationem veniam
+                    maxime dicta qui impedit dolor autem minus recusandae voluptatibus sint, hic deserunt? Ipsa
+                    laudantium qui porro aut voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero dolorem laboriosam
+                    quibusdam necessitatibus rerum veritatis! Itaque, tempore? Ea, amet quasi. Accusantium cupiditate
+                    nesciunt magnam earum, atque harum. Ex, a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequuntur consectetur saepe sint
+                    ad, error quis ipsum officia pariatur minima aut sit debitis itaque perspiciatis! Autem possimus non
+                    voluptate ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam maiores exercitationem veniam
+                    maxime dicta qui impedit dolor autem minus recusandae voluptatibus sint, hic deserunt? Ipsa
+                    laudantium qui porro aut voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero dolorem laboriosam
+                    quibusdam necessitatibus rerum veritatis! Itaque, tempore? Ea, amet quasi. Accusantium cupiditate
+                    nesciunt magnam earum, atque harum. Ex, a!
+                    </p>
+                </div>
+                <div class="about_wrapper_button">
+                   <button class="about_btn-description btn">
+                        <a href="activites.html" class="about_btn-link">En savoir plus</a>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <!-- Section Histoire -->
+        <section id="section_histoire">
+                <h2 class="histoire_title">decouvrez notre histoire</h2>
+                <p class="histoire_paragraphe">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque exercitationem voluptate odit. Earum, ab! Commodi necessitatibus delectus hic temporibus recusandae aut veritatis facere natus eos, expedita repellendus. Necessitatibus, praesentium.
+                </p>
+                <button class="histoire_btn-description btn">
+                    <a href="activites.html" class="about_btn-link">En savoir plus</a>
+                </button>
+        </section>
+        <!-- Section Services -->
+        <section id="services">
+            <h2 class="services_title">Nos services</h2>
+            <div class="services__wrapper">
+                <div class="services__card">
+                    <figure class="services__img">
+                        <img src="./img/room.png" alt="photo d'une suite au royal hotel">
+                    </figure>
+                    <div class="services__title">
+                        <h3>Chambre</h3>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <figure class="services__img">
+                        <img src="./img/restaurant.png" alt="photo de notre restaurant au le royal hotel">
+                    </figure>
+                    <div class="services__title">
+                        <h3>Restaurant</h3>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <figure class="services__img">
+                        <img src="./img/spa.png" alt="photo de notre spa ">
+                    </divfigure>
+                    <div class="services__title">
+                        <h3>Spa</h3>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <figure class="services__img">
+                        <img src="./img/events.png" alt="photo de la salle ou nous organisont les evenements">
+                    </figure>
+                    <div class="services__title">
+                        <h3>Evenements</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Section FOOTER -->
+    <footer id="footer">
+        <h2 class="footer_title">un plaisir de vous accueillir</h2>
+        <div class="footer_row">
+            <ul class="footer_box-links">
+                <li class="footer_links"><a href="#main">Accueil</a></li>
+                <li class="footer_links"><a href="#about">Hôtel</a></li>
+                <li class="footer_links"><a href="#">Restaurant</a></li>
+                <li class="footer_links"><a href="#">Evénements</a></li>
+                <li class="footer_links"><a href="./pages/activites.html">Activités</a></li>
+                <li class="footer_links"><a href="#section_histoire">Histoire</a></li>
+                <li class="footer_links"><a href="#section_contact">Contact</a></li>
+                <li class="footer_links"><a href="#section_reservation">Réserver</a></li>
+            </ul>
+            <div class="footer_contact-box">
+                <div class="footer_contact-social-links-box">
+                    <span class="footer_social-links links-instagram"></span>
+                    <span class="footer_social-links links-facebook"></span>
+                    <span class="footer_social-links links-twitter"></span>
+                </div>
+                <div class="social">
+                    <span class="footer_social"><i class="fab fa-twitter-square"></i></span>
+                    
+                </div>
+                <div class="footer_contact-newsLetter-box">
+                    <p class="footer_newsLetter-paragraphe">Inscrivez vous à notre : </p>
+                    <button class="footer_newsLetter-btn">NewsLetter</button>
+                </div>
+            </div>
+        </div>
+        <p class="footer_paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </footer>
+    <script src="./js/slide.js"></script>
 </body>
 </html>
