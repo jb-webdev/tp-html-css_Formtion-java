@@ -111,10 +111,12 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+/* wrapper items */
 .footer_row{
     display: flex;
     flex-direction: row;
 }
+/* wraper liens navigation */
 .footer_box-links{
     width: 65%;
     display: flex;
@@ -124,9 +126,6 @@ body {
     margin-right: 10em;
     margin-left: 12em;
 
-}
-.footer_contact-box{
-    width: 35%;
 }
 .footer_links{
     list-style: none;
@@ -138,6 +137,34 @@ body {
 }
 .footer_links a:hover{
     color: var(--secondaryHover);
+}
+/* wrapper newsLetter et liens Sociaux */
+.footer_contact-box{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+/* wrapper liens sociaux */
+.footer_contact-social-links-box{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer_social {
+    margin-right: 3.5em;
+}
+.fab {
+    color: var(--white);
+    font-size: 3em;
+}
+.fab:hover {
+    color: var(--secondaryHover);
+}
+/* wrapper newsLetter */
+.footer_contact-newsLetter-box{
+    width: 50%;
 }
 .footer_paragraphe{
     text-align: center;
@@ -181,6 +208,10 @@ body {
     .footer_paragraphe{
         margin-top: 2em;
     }
+    
+    .footer_contact-newsLetter-box{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 890px){
     #navbar_box-links{
@@ -211,11 +242,16 @@ body {
       margin-right: 1em;
     }
     .footer_contact-box{
-      width: 100%;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
     }
     .footer_contact-newsLetter-box{
         display: flex;
         flex-direction: column;  
+    }
+    .footer_newsLetter-btn{
+        width: 50%;
     }
 }
 @media screen and (max-width: 656px){
@@ -232,5 +268,21 @@ body {
     }
     .footer_box-links{
         flex-direction: column;
+    }
+    .footer_contact-newsLetter-box{
+        text-align: center;
+    }
+    .footer_newsLetter-btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer_contact-social-links-box{
+        width: 100%;
+        justify-content: space-around;
+        margin: 0;
+        
+    }
+    .footer_social{
+        margin-right: 0;
     }
 }
