@@ -294,6 +294,23 @@ margin-bottom: 1em;
  .contact_form-input-btn:hover{
      background-color: var(--secondaryHover);
 }
+/* ===================  SECTION findUS ===================  */
+#findUs {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+.findUs_title {
+    margin-bottom: 1em;
+    font-size: 3em;
+    color: var(--black);
+    text-align: center;
+}
+.findUs_carte iframe{
+ width: 100%;
+}
 
   /* ===================  RESPONSIVE  =================== */
 
