@@ -362,6 +362,9 @@ margin-bottom: 1em;
         margin-left: 0;
         margin-right: 0;
     }
+    .services__wrapper {
+        flex-wrap: wrap;
+    }
   }
   @media screen and (max-width: 890px){
     
