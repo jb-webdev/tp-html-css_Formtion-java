@@ -1,3 +1,4 @@
+/* ================== SECTION MAIN ===================*/
 #main {
     padding-left: 10%;
     padding-right: 10%;
@@ -11,7 +12,6 @@
     margin-bottom: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid var(--borderSecondary);
-
     position: relative;
 }
 .item img{
@@ -29,7 +29,6 @@
         transform: scale(1);opacity: 1;
     }
 }
-
  .item{
     display: none;
 }
@@ -55,7 +54,6 @@
     background-color: var(--primaryHover);
     box-shadow: 0px 0px 10px #000000;
 }
-
 .slide-left{
     left: 30px;
 }
@@ -91,15 +89,13 @@
     width: auto;
     height: 160px;  
 }
-
 .about_description{
     height: 200px;
     padding-top: auto;
     padding-bottom: auto;
     text-align: justify;
-    
-
 }
+
 /* button article */
 .about_wrapper_button{
 width: 100%;
@@ -132,7 +128,7 @@ margin-bottom: 1em;
   }
 
 
-  /* Section Histoire */
+/* ================== SECTION HISTOIRE ===================*/
   #section_histoire {
     background-image: url("../img/discover-small.jpg");
     background-position: center;
@@ -167,8 +163,8 @@ margin-bottom: 1em;
       margin-left: auto;
       margin-right: auto;
   }
-   /* =================== SECTION SERVICE ====================== */
-  /* Section Membre */
+/* =================== SECTION SERVICE ====================== */
+/* Section Membre */
 
 #services {
     margin-left: 10%;
@@ -192,18 +188,16 @@ margin-bottom: 1em;
  .services__img {
      width: 100%;
  }
-
  .services_title {
      margin-bottom: 1em;
      font-size: 3em;
      color: var(--black);
  }
- 
  .services__title-h3 {
      font-size: clamp(0.8em, 1.5em, 2em);
  }
  
- /* SECTION EXPERIENCE */
+ /* =================== SECTION EXPERIENCE =================== */
  #section_experience{
     margin-left: 10%;
     margin-right: 10%;
@@ -225,7 +219,6 @@ margin-bottom: 1em;
      display: flex;
      flex-direction: row; 
  }
-
  .experience_wrapper-item {
      display: flex;
      flex-direction: column;
@@ -239,9 +232,70 @@ margin-bottom: 1em;
  .experience_video{
      margin-left: 3em;
  }
- 
 
-  /* RESPONSIVE */
+ /* ===================  SECTION CONTACT ===================  */
+ #section_contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 1px solid var(--borderSecondary);
+ }
+ .contact_title {
+    margin-bottom: 1em;
+    font-size: 3em;
+    color: var(--black);
+    text-align: center;
+ }
+ .contact_form {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .contact_form-label {
+     font-size: 1.5em;
+ }
+ .contact_form-input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+ }
+ .contact_form-textArea {}
+
+ .contact_form-btn {
+     display: flex;
+     justify-content: center;
+}
+ .contact_form-input-btn {
+     margin-left: 1em;
+     margin-right: 1em;
+
+     background-color: var(--secondary);
+     color: var(--white);
+     border: none;
+     cursor: pointer;
+     border-radius: 0px;
+     padding-top: 1em;
+     padding-bottom: 1em;
+     padding-left: 0.8em;
+     padding-right: 0.8em;
+     margin-top: 2em;
+   }
+ .contact_form-input-btn:hover{
+     background-color: var(--secondaryHover);
+}
+
+  /* ===================  RESPONSIVE  =================== */
 
   @media screen and (max-width: 1100px){
     #about{
@@ -295,6 +349,16 @@ margin-bottom: 1em;
         margin-left: 0;
         margin-right: 0;
     }
+  }
+  @media screen and (max-width: 890px){
+    
+    #section_contact{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contact_form-input {
+        width: 100%;
+     }
   }
  
 

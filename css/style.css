@@ -75,15 +75,19 @@ body {
 .navbar_links-active{
     background-color: var(--primaryHover);
 }
-.links-reservation{
-    color: var(--white);
+.links-reservation {
     background-color: var(--secondary);
+}
+.links-reservation  a{
+    color: var(--white);
+
 }
 .navbar_links:hover{
     background-color: var(--primaryHover);
 }
 .links-reservation:hover{
     background-color: var(--secondaryHover);
+    
 }
 /* ================== Main_Section ==================*/
 #main{
