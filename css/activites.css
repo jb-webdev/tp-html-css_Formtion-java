@@ -29,7 +29,6 @@ caption {
     border: 3px solid var(--borderSecondary);
     margin-bottom: 3em;
 }
-
 .tableau_activities-header th {
     background-color: var(--secondary);
     border: 1px solid var(--borderSecondary);
@@ -39,38 +38,30 @@ caption {
 }
 tbody, thead {
     font-size: 1.3em;
-
 }
 
   /* largeur des colonnes  */
 .tableau_activites th:nth-child(1) {
     width: 30%;
-}
-  
+}  
 .tableau_activites th:nth-child(2) {
     width: 20%;
-}
-  
+}  
 .tableau_activites th:nth-child(3) {
     width: 15%;
-}
-  
+}  
 th, td {
     padding: 1em;
 }
-
 th {
     letter-spacing: 2px;
-}
-  
+} 
 td {
     letter-spacing: 1px;
-}
-  
+} 
 tbody td {
     text-align: center;
 }
-
 .th_border-bottom{
     border-bottom: 2px solid var(--borderSecondary);
 }

@@ -127,7 +127,6 @@ margin-bottom: 1em;
       background-color: var(--secondaryHover);
   }
 
-
 /* ================== SECTION HISTOIRE ===================*/
   #section_histoire {
     background-image: url("../img/discover-small.jpg");
@@ -149,7 +148,6 @@ margin-bottom: 1em;
       text-align: center;
       text-transform: uppercase;
   }
-
   .histoire_paragraphe{
       color: var(--white);
       margin-left: 20%;
